@@ -44,6 +44,7 @@ li {
   margin: 0 auto;
 }
 
+
 .logo {
   max-width: 10%;
 }
@@ -176,6 +177,7 @@ input:focus {
   max-width: 300px;
   padding-top: px;
   position: relative;
+  opacity: 70%;
   
 }
 
