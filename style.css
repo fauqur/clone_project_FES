@@ -44,7 +44,9 @@ li {
   margin: 0 auto;
 }
 
-
+.logo {
+  max-width: 10%;
+}
 
 .purple {
   color: #6415ff;
@@ -63,8 +65,7 @@ NAVBAR
 
 nav{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding-top: 32px;
 }
 
 .nav__row {
@@ -79,16 +80,110 @@ nav{
   align-items: center;
   margin: 8px 0;
   padding-bottom: 4px;
-}
+  padding-left: 16px;
+ 
+  }
 
 .nav__links {
   display: flex;
   align-items: right;
   justify-content: space-between;
   padding-left: 80px;
-  padding-top: 8px;
+  padding-top: 16px;
 }
 
 .nav__link {
   padding: 8px;
+}
+
+.nav__link--primary {
+  background-color: #6415ff;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 50px;
+}
+
+.nav__link--primary:hover {
+  background-color: #6315ff5d;  
+}
+
+/*
+
+HEADER / ABOUT
+
+*/
+
+header {
+  padding: 24px;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+}
+
+.about__para {
+  font-size: 12px;
+}
+
+.about__container{
+ flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.about__form--email {
+ box-sizing: border-box;
+  border: 16px #807e7ead;
+  border-radius: 16px;
+  position: absolute;
+}
+
+.about__btn--email {
+  background-color: #6415ff;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.about__btn--email:active {
+  background-color: #6315ff5d;  
+  transform: translateY(1px);
+}
+
+.about_para--cust {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 24px;
+  padding-top: 32px;
+}
+
+.about__card1 {
+  align-items: center;
+  justify-content: left;
+  text-align: center;
+  max-width: 30%;
+}
+
+.about__img {
+  max-width: 300px;
+  padding-top: px;
+  position: relative;
+  
+}
+
+.about__fig {
+  max-width: 500px;
+}
+
+.about__card2 {
+  max-width: 70vw;
+  justify-content: right;
 }
