@@ -436,10 +436,11 @@ STEPS
   flex-direction: column;
 }
 
+/*
 .steps__text--1 {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   margin-left: 8px;
-}
+} */
 
 .steps__title {
   margin-bottom: 8px;
