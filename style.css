@@ -52,7 +52,7 @@ li {
 
 ol {
   list-style-type: none;
-  counter-reset: 1 (steps__list);
+  counter-reset: steps__list;
  padding-top: 2rem;
 
  
@@ -423,14 +423,17 @@ STEPS
 
 .steps__item {
   display: flex;
-  flex-direction: column; 
+  align-items: flex-start;
+  gap: 24px;
 }
 
-.steps__title {
-    
+.steps__text {
+  display: flex;
+flex-direction: column;
 }
 
-.steps__description {
-text-decoration-color: rgba(165, 165, 165, 0.466);
+.steps__para {
+  color: rgba(125, 125, 125, 0.781);
+text-decoration-color: rgba(165, 165, 165, 0.466) !important;
  
 }
