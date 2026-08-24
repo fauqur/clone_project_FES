@@ -244,10 +244,10 @@ input:focus {
 
 /* 
 
-FEATURES
+SERVICES
 
 */
-#features {
+#servicess {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,14 +256,46 @@ FEATURES
 }
 
 
-.features__title {
+.services__title {
   font-weight: 900;  
   padding: 24px;
 }
 
-.features__para {
+.services__para {
   color: rgb(172, 172, 172);
   font-size: 18px;
   max-width: 600px;
   margin: 0 auto;
+}
+
+.service__img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.329) ;
+  justify-content: left;
+  padding: 16px;
+  max-height: fit-content;
+  max-width: fit-content;
+}
+
+.service {
+  display: flex;
+  width: calc(100% / 3);
+   
+}
+
+.service__para, .service__title {
+  text-align: left;
+  padding: 12px;
+ 
+}
+
+.services__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.service__description {
+  display: flex;
+  flex-direction: column;
 }
