@@ -8,6 +8,16 @@
   color: #243e63;
 }
 
+h2 {  
+  font-size: 48px;
+  line-height: 1.25;
+}
+
+
+/*h4 {
+  text-align: center;
+}*/
+
 a{
   text-decoration: none;
 }
@@ -21,10 +31,11 @@ body {
 }
 
 section {
-    
+      
 }
 
 main {
+  
     
 }
 
@@ -38,6 +49,14 @@ li {
   list-style-type: none;
 }
 
+.container {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .row {
   width: 100%;
   max-width: 1200px;
@@ -46,7 +65,7 @@ li {
 
 
 .logo {
-  max-width: 10%;
+  max-width: 14%;
 }
 
 .purple {
@@ -67,6 +86,8 @@ NAVBAR
 nav{
   display: flex;
   padding-top: 32px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 .nav__row {
@@ -79,9 +100,9 @@ nav{
 .nav__logo {
   display: flex;
   align-items: center;
-  margin: 8px 0;
+  margin: 16px 0;
   padding-bottom: 4px;
-  padding-left: 16px;
+  padding-left: 0;
  
   }
 
@@ -94,7 +115,7 @@ nav{
 }
 
 .nav__link {
-  padding: 8px;
+  padding: 24px;
 }
 
 .nav__link--primary {
@@ -108,6 +129,10 @@ nav{
   background-color: #6315ff5d;  
 }
 
+.nav__link--secondary {
+  margin-left: 32px;
+}
+
 /*
 
 HEADER / ABOUT
@@ -119,16 +144,26 @@ header {
   display: flex;
   flex-direction: row; 
   align-items: center;
+  
 }
 
+/*.about__title {
+  font-size: 48px;
+  line-height: 1.25;
+  }  */
+
 .about__para {
-  font-size: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 32px 0;
 }
 
 .about__container{
  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 64px;
 }
 
 input {
@@ -139,19 +174,40 @@ input:focus {
   outline: none;
 }
 
-.about__form--email {
- box-sizing: border-box;
-  border: 16px #807e7ead;
-  border-radius: 16px;
-  position: absolute;
+.about__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.about__form {
+  max-width: 80%;
+}
+
+.about__form--email {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 50px;
+  padding: 4px 4px 4px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  
+}
+
+.about__form--email input[type="email"] {
+  flex: 1;
+  opacity: 75%;
+  
+}
+
 
 .about__btn--email {
   background-color: #6415ff;
   color: white;
-  padding: 8px 24px;
+  padding: 16px 24px;
   border-radius: 50px;
   cursor: pointer;
+  
 }
 
 .about__btn--email:active {
@@ -160,32 +216,55 @@ input:focus {
 }
 
 .about_para--cust {
+  color: gray;
   text-align: left;
-  font-size: 12px;
+  font-size: 9px;
   margin-top: 24px;
+  margin-bottom: 8px;
   padding-top: 32px;
 }
 
 .about__card1 {
-  align-items: center;
-  justify-content: left;
-  text-align: center;
-  max-width: 30%;
+  width: 40%;
+  max-width: none;
+  text-align: left;
 }
-
 .about__img {
   max-width: 300px;
-  padding-top: px;
   position: relative;
-  opacity: 70%;
-  
+  opacity: 75%;  
 }
 
 .about__fig {
-  max-width: 500px;
+  max-width: 550px;
 }
 
 .about__card2 {
-  max-width: 70vw;
-  justify-content: right;
+  width: 60%;
+}
+
+/* 
+
+FEATURES
+
+*/
+#features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.features__title {
+  font-weight: 800;  
+  padding: 24px;
+}
+
+.features__para {
+  color: gray;
+  font-size: 14px;
+  max-width: 75%;
+  align-items: center;
+  
+  
 }
