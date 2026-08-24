@@ -415,10 +415,10 @@ STEPS
 }
 
 
-.steps__list {
+/*.steps__list {
   display: flex;
   flex-direction: column;
-   text-align: left;
+  text-align: left;
 }
 
 .steps__header {
@@ -429,6 +429,36 @@ STEPS
   align-items: flex-start;
   gap: 24px;
   margin: 0 0 32px 0
+}*/
+
+.steps__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: left;
+  list-style-type: none;
+  counter-reset: steps__list;
+  padding-top: 2rem;
+}
+
+.steps__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 0 0 32px 0;
+  counter-increment: steps__list;
+  min-height: 96px;
+}
+
+.steps__item::before {
+  content: counter(steps__list, decimal-leading-zero);
+  font-weight: bold;
+  color: rgba(151, 150, 150, 0.452);
+  font-size: 48px;
+  line-height: 1;
+  width: 64px;
+  flex-shrink: 0;
+  text-align: right;
 }
 
 .steps__text {
