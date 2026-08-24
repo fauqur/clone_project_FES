@@ -200,7 +200,6 @@ input:focus {
   
 }
 
-
 .about__btn--email {
   background-color: #6415ff;
   color: white;
@@ -252,19 +251,19 @@ FEATURES
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
+  
 }
 
 
 .features__title {
-  font-weight: 800;  
+  font-weight: 900;  
   padding: 24px;
 }
 
 .features__para {
-  color: gray;
-  font-size: 14px;
-  max-width: 75%;
-  align-items: center;
-  
-  
+  color: rgb(172, 172, 172);
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
 }
