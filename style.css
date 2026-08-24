@@ -230,6 +230,8 @@ input:focus {
   
 }
 
+
+.btn,
 .about__btn--email, 
 .quality__btn  {
   background-color: #6415ff;
@@ -240,6 +242,7 @@ input:focus {
   
 }
 
+.btn:active,
 .about__btn--email:active, .quality__btn:active {
   background-color: #6315ff5d;  
   transform: translateY(1px);
