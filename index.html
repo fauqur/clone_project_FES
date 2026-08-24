@@ -15,9 +15,12 @@
     <nav>
       <div class="row nav__row">
         <div class="nav__logo">
-          <img class="logo" src="./assets/logo-box.svg" alt=" logo">
-          <h3 class="nav__header">Treact</h3>        
-        </div>
+          <img class="nav__logo--img" src="./assets/logo-box.svg" alt=" logo">
+        
+          <div>
+            <h3 class="nav__logo--title">Treact</h3>        
+          </div>
+      </div>
           <ul class="nav__links">
             <li><a href="#about" class="nav__link"> About</a></li>
             <li><a href="#blog" class="nav__link">Blog </a></li>              
@@ -34,24 +37,28 @@
       <div class="about__container">
         <div class="row about__row">
           <div class="about__card1">
-            <h2 class="about__title">Beautiful React Templates <span class=purple>for you.</span></h2>
-            <p class="about__para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-            <div class="about__form"><form class="about__form--email">
-              <input type="email" name="about__email" id="get_started" placeholder="Your Email Address">
-              
-              <input class="btn about__btn--email" type="button" value="Get Started">
-            </form>
-          </div>
+            <h1 class="about__title">Beautiful React Templates <span class=purple>for you.</span></h1>
             
-            <figure class="about__img"><p class="about_para--cust"> OUR TRUSTED CUSTOMERS</p>
-              <img  class="about__img" src="./assets/customers-logo-strip.png" alt="Customer Logos">
-            </figure>
+            <p class="about__para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
+            <!-- <div class="about__form">
+              <input type="email" name="about__form--email" id="get_started" placeholder="Your Email Address">
+              
+              <button class="btn about__btn--email">Get Started</button>
+                          
+          </div> -->
+            <div class="about__form">
+                <input type="text" class="about__form--email" placeholder="Your E-mail Address">
+                <button class="about__form--btn">Get Started</button>
+              </div>
+            <p class="about_para--cust"> OUR TRUSTED CUSTOMERS</p>
+              <img  class="about__img--logo" src="./assets/customers-logo-strip.png" alt="Customer Logos">
+           
           </div>
-          <div class="about__card2">
-            <figure>
-              <img src="./assets/design-illustration-2.svg" alt="" class="about__fig">
+          
+            <figure class="about__fig">
+              <img src="./assets/design-illustration-2.svg" alt="" class="about__fig--img">
             </figure>
-          </div>
+          
         </div>
       </div>
     </header>
@@ -116,8 +123,12 @@
           <div class="card quality__card">
             <h4 class="quality__header purple">QUALITY WORK</h4>
             <h2 class="quality__title">Developed & Designed by <span class="purple">Professionals.</span></h2>
-            <p class="quality__para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis aperiam, veniam esse adipisci non et eligendi dolore vel, quaerat minus, voluptates mollitia autem dolorum dolores perspiciatis possimus repudiandae expedita! Consectetur?</p>
-            <input class="btn quality__btn" type="button" value="Learn More">
+            <p class="quality__para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                quam cupiditate commodi qui excepturi laborum adipisci officiis,
+                corporis possimus. Reiciendis?
+              </p>
+           <button class="btn quality__btn">Learn More</button>
 
           </div>
           <div class="quality__card">
