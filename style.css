@@ -46,9 +46,9 @@ ul {
   
 }
 
-li {
+/*li {
  margin: 16px;
-}
+}*/
 
 ol {
   list-style-type: none;
@@ -70,7 +70,8 @@ ol li::before {
   font-weight: bold;
   color: rgba(151, 150, 150, 0.452);
   font-size: 48px;
-   text-align: left;
+  text-align: left;
+  line-height: 1;
 }
 
 ol li::marker {
@@ -302,7 +303,7 @@ SERVICES
 .services__title, 
 .service__title, 
 .quality__title, 
-.steps__title {
+.steps__header {
   font-weight: 900;  
   
 }
@@ -408,9 +409,12 @@ STEPS
 
 */
 
-.steps__card {
+.steps__section {
+  text-align: left;
 
 }
+
+
 .steps__list {
   display: flex;
   flex-direction: column;
@@ -418,18 +422,23 @@ STEPS
 }
 
 .steps__header {
-  margin-left: 12px;
 }
 
 .steps__item {
   display: flex;
   align-items: flex-start;
   gap: 24px;
+  margin: 0 0 32px 0
 }
 
 .steps__text {
   display: flex;
-flex-direction: column;
+  flex-direction: column;
+}
+
+.steps__text--1 {
+  margin-bottom: 36px;
+  margin-left: 8px;
 }
 
 .steps__title {
