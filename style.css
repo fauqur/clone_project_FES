@@ -418,7 +418,7 @@ STEPS
 }
 
 .steps__header {
-  margin-left: 4px;
+  margin-left: 12px;
 }
 
 .steps__item {
@@ -432,8 +432,13 @@ STEPS
 flex-direction: column;
 }
 
+.steps__title {
+  margin-bottom: 8px;
+  font-size: 24px;
+}
 .steps__para {
   color: rgba(125, 125, 125, 0.781);
-text-decoration-color: rgba(165, 165, 165, 0.466) !important;
+  line-height: 2;
+
  
 }
