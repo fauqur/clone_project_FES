@@ -54,11 +54,20 @@ main {
     
 }
 
-svg {
+/*svg {
   z-index: 0;
 
-}
+} */
 
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  padding: 42px ;
+  position: relative;
+  z-index: 2;
+}
 
 
 img {
@@ -523,13 +532,14 @@ QUALITY
   margin: 4rem;
 }
 
-.card, 
-.quality__card {
+.card {
   display: flex;
   flex-direction: column;
   width: 50%;
   justify-content: center;
   padding: 42px ;
+  position: relative;
+  z-index: 2;
 }
 
 .quality__btn  {
@@ -546,6 +556,16 @@ QUALITY
 .quality__header {
 text-align: left;
   
+}
+
+.quality__card {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  padding: 42px ;
+  position: relative;
+  z-index: 2;
 }
 
 .quality__title {
@@ -567,20 +587,20 @@ text-align: left;
 .card__img,
 .quality__img {
  max-width: 100%;
- z-index: 10;
+ z-index: 2;
 }
 
 .quality__svg {
   transform: translateX(50%) translateY(50%)
   scaleX(1) scaleY(1);
-  position: relative;
+  position: absolute;
   width: 80px;
   height: 80px;
   fill: #5011cc;
   display: block;
   z-index: 0;
-  right: -26rem; 
-  bottom: 7rem;
+  right: 4rem; 
+  bottom: 6rem;
   --tw-text-opacity: 1;
   color: rgb(100, 21, 255 var(--tw-text-opacity));
 }
