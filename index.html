@@ -18,7 +18,7 @@
           <img class="nav__logo--img" src="./assets/logo-box.svg" alt=" logo">
         
           <div>
-            <h3 class="nav__logo--title">Treact</h3>        
+            <h3 class="nav__logo--title title">Treact</h3>        
           </div>
       </div>
           <ul class="nav__links">
@@ -47,7 +47,7 @@
                           
           </div> -->
             <div class="about__form">
-                <input type="text" class="about__form--email" placeholder="Your E-mail Address">
+                <input id="about-form--input" type="text" class="about__form--email" placeholder="Your E-mail Address">
                 <button class="about__form--btn">Get Started</button>
               </div>
             <p class="about_para--cust"> OUR TRUSTED CUSTOMERS</p>
@@ -68,7 +68,7 @@
       <div class="container">
         <div class="row row__narrow">
           <h4 class="services__section purple">FEATURES</h4>
-          <h2 class="services__title ">We Have Amazing <span class="purple">Service.</span></h2>
+          <h2 class="services__title title ">We Have Amazing <span class="purple">Service.</span></h2>
           <p class="services__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
           <div class="services__wrapper">
             <div class="service">
@@ -141,7 +141,7 @@
         <div class="row quality__row">
           <div class="card quality__card">
             <h4 class="quality__header purple">QUALITY WORK</h4>
-            <h2 class="quality__title">Designed & Developed by <span class="purple">Professionals.</span></h2>
+            <h2 class="quality__title title">Designed & Developed by <span class="purple">Professionals.</span></h2>
             <p class="quality__para">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
                 quam cupiditate commodi qui excepturi laborum adipisci officiis,
@@ -223,9 +223,51 @@
       </div>
     </section>
     <section id="values">
-      <div class="container">
-        <div class="row">
-          <h2>Section Omitted from PDF</h2>
+      <div class="container values__container">
+        <div class="row values__row">
+          <div class="values__section">
+            <div class="values__header purple"><h4 class="purple">VALUES</h4></div>
+            <h2 class="values__title title">We Always Abide by Our <span class="purple">Principles.</span></h2>
+            <div class="values__para "><p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            </div>
+            <div class="values__list">
+              <div class="value">
+                <div class="value__title">
+                  <figure class="value__img--wrapper">      
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(39, 103, 73, 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="value__img">
+                        <line x1="12" y1="1" x2="12" y2="23"></line>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                      </svg>
+                    
+                  </figure>
+                  <div class="value__name">Affordable</div>
+                  <div class="value__para ">
+                    We promise to offer you the best rate we can at par with industry standard.
+                  </div>
+                </div>
+                <div class="value">
+                  <div class="value__title">
+                    <figure class="value__img--wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(155, 44, 44, 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="value__img">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                      </svg>
+                    </figure>
+                    <div class="value__name">Professionalism</div>
+                    <div class="value__para">
+                      We assure you that our templates are designed and created by professional designers.
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn values__btn">Learn More</button>
+          </div>
+          <img class="values__img"   src="./assets/prototype-illustration.svg" alt="">
+         
 
         </div>
       </div>
@@ -236,7 +278,7 @@
           <div class="plans__container">
             <div class="plans__title--wrapper">
             <h4 class="plans__header purple">PRICING</h4>
-            <h2 class="plans__title">Reasonable & Flexible <span class="purple">Plans.</span></h2>
+            <h2 class="plans__title title">Reasonable & Flexible <span class="purple">Plans.</span></h2>
             <p class="plans__para">
                 Lorem ipsum dolor sit amet ,consectetur adipisicing elit, sed do elusmod tempor incididunt ut labore et dotore magna aliqua.
               </p>
@@ -252,10 +294,10 @@
                   </div>
                   <div class="plan__details">
                     <div class="plan__user">For Individuals</div>
-                      <p class="plan__feature">30 Templates</p>
-                       <p class="plan__feature"> 7 Landing Pages</p>
-                       <p class="plan__feature">12 internal Pages</p>
-                       <p class="plan__feature">Basic Assistance</p>
+                      <div class="plan__feature">30 Templates</div>
+                       <div class="plan__feature"> 7 Landing Pages</div>
+                       <div class="plan__feature">12 internal Pages</div>
+                       <div class="plan__feature">Basic Assistance</div>
                     
 
                   </div>	
@@ -307,71 +349,7 @@
 
 
 
-                <!--<div class="plan">
-                  <div class="plan__highlight"></div>
-                  <div class="plan__type">
-                    <div class="plan__name">PERSONAL</div>
-                    <div class="plan__price">$17.99</div>
-                    <div class="plan_cycle">MONTHLY</div>
-
-                  </div>
-                  <div class="plan__details">
-                    <div class="plan__user">For Individuals</div>
-                      <p class="plan__feature">30 Templates</p>
-                       <p class="plan__feature"> 7 Landing Pages </p>
-                       <p class="plan__feature">12 internal Pages</p>
-                       <p class="plan__feature">Basic Assistance</p>
-                    
-                  </div>
-                  <div class="plan__select">
-                    <button class="plan__btn">Buy Now</button>
-                  </div>
-                </div>
-              
-              
-              <div class="plan">
-                  <div class="plan__highlight"></div>
-                  <div class="plan__type">
-                    <div class="plan__name">BUSINESS</div>
-                    <div class="plan__price">$37.99</div>
-                    <div class="plan__cycle">MONTHLY</div>
-                  </div>
-                    <div class="plan__details">
-                      <div class="plan__user">For Small Businesses</div>
-                      <div class="plan__feature">60 Templates</div>
-                      <div class="plan__feature">15 Landing Pages</div>
-                      <div class="plan__feature">22 InternalPages</div>
-                      <div class="plan__feature">Proirity Assistance</div>
-                    </div>
-                    
-                    
-                    <div class="plan__select">
-                      <button class="plan__btn">Buy Now</button>
-                    </div>
-                  
                 
-              </div>
-              <div class="plan">
-                  <div class="plan__highlight"></div>
-                  <div class="plan__type">
-                    <div class="plan__name">ENTERPRISE</div>
-                    <div class="plan__price">$57.99</div>
-                    <div class="plan__cycle">MONTHLY</div>
-                  </div>
-                    <div class="plan__details">
-                      <div class="plan__user">For Large Companies</div>
-                      <div class="plan__feature">90 Templates</div>
-                      <div class="plan__feature">27 Landing Pages</div>
-                      <div class="plan__feature">37 InternalPages</div>
-                      <div class="plan__feature">Personal Assistance</div>
-                    </div>
-                    <div class="plan__select">
-                      <button class="plan__btn">Buy Now</button>
-                    </div>
-                   
-                
-              
-            </div> -->
 
 
           </div>
@@ -402,7 +380,7 @@
               </div>
             </div>
           </div>
-          <!--Get Started section ommitted from pdf but visible, assets not provided. I borrowed the box shadow and color values, otherwise did it my way-->
+         
         </div>
       </div>
     </section>
