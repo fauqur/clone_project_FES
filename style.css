@@ -368,7 +368,7 @@ outline: none;
 }
 
 .about__form--email::placeholder {
-  font-weight: 500px;
+  font-weight: 500;
   color: #d7d7d8;
 }
 /*.about__form--email input[type="email"] {
@@ -587,6 +587,7 @@ text-align: left;
 .card__img,
 .quality__img {
  max-width: 100%;
+ position: relative;
  z-index: 2;
 }
 
@@ -599,8 +600,8 @@ text-align: left;
   fill: #5011cc;
   display: block;
   z-index: 0;
-  right: 4rem; 
-  bottom: 6rem;
+  right: 2.48rem; 
+  bottom: 4.6rem;
   --tw-text-opacity: 1;
   color: rgb(100, 21, 255 var(--tw-text-opacity));
 }
@@ -611,7 +612,7 @@ STEPS
 */
 
 .steps__section {
-    padding-left: 1.4rem;
+  padding-left: 1.4rem;
   text-align: left;
   font-size: 16px;
   letter-spacing: 1.6px;
@@ -619,6 +620,29 @@ STEPS
 
 }
 
+.steps__card--img {
+  position: relative;
+  z-index: 2;
+}
+
+.steps__img {
+  position: relative;
+  z-index: 2;
+
+}
+
+
+.steps__svg {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+    height: 10rem;
+    opacity: 0.8;
+    z-index: -10;
+    color: rgb(100, 21, 255);
+    fill: currentColor;
 
 /*.steps__list {
   display: flex;
@@ -651,6 +675,8 @@ STEPS
   flex-direction: row;
   flex-wrap:wrap;
   padding-left: 24px;
+  position: relative;
+  z-index: 2;
 }
 
 .steps__item {
@@ -909,7 +935,6 @@ line-height: 1.5;
 .plan:nth-child(3) .plan__highlight, .plan:nth-child(3) .plan__btn {
   color: #f7fafc;
   background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%
-100%
 );
 }
 
@@ -967,7 +992,7 @@ GET STARTED NOT IN PDF
   font-size: 16px;
   color: #f7fafc;
   line-height: 1.5;
-  letter-spacing: 0.025;
+  letter-spacing: 0.025em;
   margin: 1px;
   z-index: 2;
 }
@@ -1025,9 +1050,9 @@ footer {
   justify-content: space-between;
   align-items: center;
 
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
 
-   column-gap: 13.8rem;
+   column-gap: 9.8rem;
   /*margin-top: -48px;*/
    /*gap: 177.5px;*/
    margin-bottom: 18px;
