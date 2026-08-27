@@ -4,13 +4,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
+}
+
+body {
   font-family: 'Inter', system-ui;
-  color: #243e63;
+  color: #243e63;  
 }
 
 h1 {
   font-size: 48px;
-  color: black;
+  color: #1a202c;
 
 }
 
@@ -56,12 +60,10 @@ p {
   line-height: 1.63;
 }
 
-body {
-    
-}
+
 
 section {
-      
+   padding: 0 32px;   
 }
 
 main {
@@ -162,11 +164,11 @@ ol li::marker {
   transition: all 500ms ease;
 }
 .container {
-  padding: 40px 0;
-  display: flex;
+  padding: 96px 0;
+  /*display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: center;*/
 }
 
 .row {
@@ -193,6 +195,8 @@ svg:not(:root)  {
     overflow-clip-margin: content-box;
     overflow: hidden;
 }
+
+
 
 /*
 
@@ -1102,7 +1106,90 @@ line-height: 1.5;
 
 /*
 
-GET STARTED NOT IN PDF
+TESTIMONIAL
+
+*/
+
+#testimonials .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#testimonials .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#testimonials .section__title {
+  margin-bottom: 24px;
+  line-height: 1.25;
+}
+.testimonials__img,
+.testimonials__reviews {
+  width: 50%;
+
+}
+
+.testimonials__reviews {
+  display: flex;
+  flex-direction: column;
+  padding-left: 64px;
+  
+}
+
+.testimonial__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.testimonial__btns {
+  display: flex;
+  align-items: center;
+z-index: 10;
+}
+
+.testimonial__btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.testimonial__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background: #edf2f7;
+    border-radius: 50%;
+    margin: 0 12px;
+    transition: all 300ms ease;
+}
+
+/*.fa-star,
+.fa-solid,
+.svg-inline--fa {
+  color: #f8d560 !important;
+}
+
+#testimonials i, 
+.rating__color {
+  color: rgb(255, 212, 59) !important;
+
+}*/
+
+/*
+
+GET STARTED 
 
 */
 
@@ -1138,7 +1225,7 @@ GET STARTED NOT IN PDF
   }
 .start__blob--1 {
     position: absolute;
-    bottom: -0.4rem;
+    bottom: -0.21rem;
     left: 0rem;
     height: 20rem;
     width: 20rem;
@@ -1330,6 +1417,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 8rem;
+
+
    /* max-width: 1280px;*/
 }
 
