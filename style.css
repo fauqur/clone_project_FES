@@ -1922,7 +1922,7 @@ header {
     flex-direction: column;
     align-items: center;
   }
-  h1, .about__title {
+  h1, .about__theme {
     font-size: 30px;
   }
   .about__para {
@@ -1937,17 +1937,19 @@ header {
     margin-top: 48px;
   }
 
-    .section__title {
+    /*.section__title,*/
+    .section__id {
     font-size: 16px;
   }
 
-  .features {
+  /*.services {
     max-width: 768px;
-  }
-  .feature {
+  }*/
+  .service {
     width: calc(50%);
   }
-  .feature__title {
+  /*.feature__title*/ /*section__theme ?*/
+  service__title {
     line-height: 1;
   }
   .service__row {
@@ -1957,25 +1959,28 @@ header {
   .service__para {
     max-width: none;
   }
-.services__title {
+#service .section__theme {
   font-size: 48px !important;
   margin: 4px 0;
 }
   .services__wrapper {
     max-width: 768px;
   }
-.service {
+/*.service {
   width: calc(50%);
-}
-.quality__para {
+}*/
+/*.quality__para,*/
+#quality .section__para {
   padding-top: 0.01px !important;
 }
-  .section__para, 
-  .quality__para,
-  .para {
+  
+  /*.quality__para,
+  .para, 
+  .section__para*/ {
     font-size: 16px;
   }
-  .title {
+  /*.title,*/
+  .section__theme {
     font-size: 36px;
   }
   .quality__description {
@@ -1983,7 +1988,8 @@ header {
     padding-right: 48px;
   }
 
-#values .title {
+/*#values .title,*/
+#values .section__id {
   justify-content: flex-start;
   line-height: 1.25;
   margin-top: 16px;
@@ -2011,8 +2017,8 @@ header {
   .plan {
     margin-right: 0px;
   }
-  #features .section__title,
-  #pricing .title {
+  #features .section__theme,
+  #pricing .section__theme {
     font-size: 48px;
   }
 
@@ -2020,7 +2026,8 @@ header {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
-  #testimonials .section__title {
+  #testimonials .section__id,
+  /*#testimonials .section__title*/ {
     margin-bottom: 1px;
     margin-top: 64px;
     text-align: center;
@@ -2071,13 +2078,14 @@ header {
     width: auto;
     max-width: 384px;
   }
-  .section__para, 
-  .para, 
+ 
+  /*.para, 
   .services__para,
    .values__para,
     .plans__para,
     .testimonials__para,
-    .quality__para {
+    .quality__para,*/ 
+    .section__para {
     font-size: 14px;
   }
   #quality .row,
@@ -2096,10 +2104,11 @@ header {
   padding-left: 0px;
 }
 
-  .quality__card,
+  /*.quality__card,
   .steps__section,
   .values__section,
-  .testimonials__section {
+  .testimonials__section,*/
+  .section__theme {
     padding: 0;
     margin-top: 64px;
     text-align: center;
